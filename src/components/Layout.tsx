@@ -87,9 +87,13 @@ export default function Layout({ currentPage, onNavigate, openAde, setOpenAde, c
       {/* Sidebar */}
       <div id="sidebar" style={{ width: 240, background: '#0B1E3D', display: 'flex', flexDirection: 'column', position: 'fixed', top: 0, left: 0, bottom: 0, zIndex: 50, overflowY: 'auto' }}>
         {/* Logo */}
-        <div style={{ padding: '20px 16px 16px', borderBottom: '1px solid rgba(255,255,255,0.08)' }}>
-          <div style={{ fontSize: 18, fontWeight: 700, color: '#fff', letterSpacing: '-0.3px' }}>Gray Mechanical</div>
-          <div style={{ fontSize: 10, color: '#C89B3C', fontWeight: 600, letterSpacing: '0.8px', textTransform: 'uppercase', marginTop: 2 }}>ADE Operations Center</div>
+        <div style={{ padding: '16px 16px 14px', borderBottom: '1px solid rgba(255,255,255,0.08)' }}>
+          <img
+            src="https://www.graymechanical.com/wp-content/uploads/2017/10/logo-light@2x.png"
+            alt="Gray Mechanical"
+            style={{ width: '100%', maxWidth: 180, height: 'auto', display: 'block', marginBottom: 8 }}
+          />
+          <div style={{ fontSize: 10, color: '#C89B3C', fontWeight: 600, letterSpacing: '0.8px', textTransform: 'uppercase' }}>ADE Operations Center</div>
           <div style={{ fontSize: 10, color: 'rgba(255,255,255,0.4)', marginTop: 1 }}>Powered by Neuralogic</div>
         </div>
 
