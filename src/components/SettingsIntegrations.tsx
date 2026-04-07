@@ -209,12 +209,7 @@ export default function SettingsIntegrations() {
               {USERS.map(u => (
                 <tr key={u.name}>
                   <td>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-                      <div style={{ width: 32, height: 32, borderRadius: '50%', background: '#0B1E3D', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 12, fontWeight: 700 }}>
-                        {u.name.split(' ').map(n => n[0]).join('').substring(0, 2)}
-                      </div>
-                      <span style={{ fontWeight: 600 }}>{u.name}</span>
-                    </div>
+                    <span style={{ fontWeight: 600 }}>{u.name}</span>
                   </td>
                   <td style={{ color: '#5A6A7A' }}>{u.role}</td>
                   <td style={{ fontSize: 12, color: '#2E6FD9' }}>{u.access}</td>

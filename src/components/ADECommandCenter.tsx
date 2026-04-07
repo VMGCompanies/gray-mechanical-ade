@@ -1,5 +1,17 @@
 import { useState, useEffect } from 'react'
 import { ADES, ESTIMATES, SERVICE_CALLS, TECHNICIANS, INVOICES } from '../data'
+import VECTORWorkspace from './ade/VECTORWorkspace'
+import SHIELDWorkspace from './ade/SHIELDWorkspace'
+import LEDGERWorkspace from './ade/LEDGERWorkspace'
+import PROCUREWorkspace from './ade/PROCUREWorkspace'
+import PULSEWorkspace from './ade/PULSEWorkspace'
+import ECHOWorkspace from './ade/ECHOWorkspace'
+import CANVASWorkspace from './ade/CANVASWorkspace'
+import SCOUTWorkspace from './ade/SCOUTWorkspace'
+import FIELDWorkspace from './ade/FIELDWorkspace'
+import ONBOARDWorkspace from './ade/ONBOARDWorkspace'
+import SIGNALWorkspace from './ade/SIGNALWorkspace'
+import CORAWorkspace from './ade/CORAWorkspace'
 
 interface Props {
   openAde: string | null
@@ -409,6 +421,18 @@ function ADEWorkspace({ adeId }: { adeId: string }) {
       case 'apex': return <APEXWorkspace />
       case 'dispatch': return <DISPATCHWorkspace />
       case 'aria': return <ARIAWorkspace />
+      case 'vector': return <VECTORWorkspace />
+      case 'shield': return <SHIELDWorkspace />
+      case 'ledger': return <LEDGERWorkspace />
+      case 'procure': return <PROCUREWorkspace />
+      case 'pulse': return <PULSEWorkspace />
+      case 'echo': return <ECHOWorkspace />
+      case 'canvas': return <CANVASWorkspace />
+      case 'scout': return <SCOUTWorkspace />
+      case 'field': return <FIELDWorkspace />
+      case 'onboard': return <ONBOARDWorkspace />
+      case 'signal': return <SIGNALWorkspace />
+      case 'cora': return <CORAWorkspace />
       default: return <GenericADEWorkspace ade={ade} />
     }
   }

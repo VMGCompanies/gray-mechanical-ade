@@ -46,10 +46,7 @@ export default function ServiceOperations() {
             const sc = statusColor(t.status)
             return (
               <div key={t.id} style={{ border: '1px solid rgba(11,30,61,0.1)', borderRadius: 8, padding: 14 }}>
-                <div style={{ display: 'flex', justify: 'space-between', alignItems: 'flex-start', marginBottom: 8, justifyContent: 'space-between' }}>
-                  <div style={{ width: 36, height: 36, borderRadius: '50%', background: '#0B1E3D', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 12, fontWeight: 700 }}>
-                    {t.name.substring(0, 2).toUpperCase()}
-                  </div>
+                <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: 8 }}>
                   <span style={{ fontSize: 10, fontWeight: 700, padding: '3px 7px', borderRadius: 4, background: sc.bg, color: sc.color }}>{t.status}</span>
                 </div>
                 <div style={{ fontWeight: 700, fontSize: 13 }}>Tech {t.name}</div>
